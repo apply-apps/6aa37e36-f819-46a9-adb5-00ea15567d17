@@ -2,8 +2,7 @@
 // Combined code from all files
 
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import { SafeAreaView, StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import ConfettiCannon from 'react-native-confetti-cannon';
 
 const colors = [
@@ -65,7 +64,7 @@ const ColorSortGame = ({ onComplete }) => {
     );
 };
 
-const App = () => {
+export default function App() {
     const [isComplete, setIsComplete] = useState(false);
 
     return (
@@ -80,13 +79,14 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#121212',
         alignItems: 'center',
         justifyContent: 'center',
     },
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        color: '#ffffff',
         marginVertical: 20,
     },
     gameContainer: {
@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     },
     instruction: {
         fontSize: 18,
+        color: '#ffffff',
         marginBottom: 10,
     },
     colorButtons: {
@@ -119,5 +120,3 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
 });
-
-export default App;
