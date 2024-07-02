@@ -9,8 +9,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^14.0.2",
     "expo": "~51.0.17",
     "expo-status-bar": "~1.12.1",
+    "native": "^0.3.3",
     "react": "18.2.0",
     "react-native": "0.74.2"
   },
